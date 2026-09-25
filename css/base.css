@@ -5,7 +5,19 @@
 }
 body{
     background-color: rgb(88, 69, 54);
+    font-family: 'DANFO','Times New Roman', Times, serif;
 }
 header{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5vh;
+
+    color: #d1c0ad;
+    letter-spacing: 2px;
 }
+header>h1{
+    font-size: 6em;
+}
+header>a
