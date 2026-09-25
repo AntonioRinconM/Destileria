@@ -17,12 +17,15 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem 2rem;
     padding: 1.5rem 2rem;
     color: rgb(255, 226, 162);
     border-bottom: 4px solid rgb(255, 226, 162);
+    width: 100%;
+    max-width: 100%;
 }
 
 header > h1 {
@@ -30,7 +33,10 @@ header > h1 {
     align-items: center;
     color: inherit;
     margin: 0;
-    font-size: clamp(2.8rem, 6vw, 8rem);
+    flex: 1 1 68%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: clamp(2.6rem, 5vw, 8rem);
     letter-spacing: 0.2rem;
     line-height: 0.9;
     white-space: normal;
@@ -41,7 +47,9 @@ header > nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 0 1 11rem;
     min-width: 11rem;
+    max-width: 100%;
 }
 
 header > nav a {
@@ -264,9 +272,17 @@ header > nav a:hover {
 
 @media (max-width: 980px) {
     header {
-        flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+    }
+
+    header > h1,
+    header > nav {
+        flex-basis: 100%;
+    }
+
+    header > nav {
+        align-items: center;
     }
 
     .promoHero,
