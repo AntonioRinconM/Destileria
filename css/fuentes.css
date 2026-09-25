@@ -18,42 +18,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/* ! KEYFRAMES  */
-@keyframes letterSpacingBounce {
-    0% {
-        letter-spacing: 0em;
-    }
-
-    40% {
-        letter-spacing: 0.5em;
-        /* se alarga */
-    }
-
-    55% {
-        letter-spacing: 0.05em;
-        /* se achica de más (overshoot) */
-    }
-
-    100% {
-        letter-spacing: 0.2em;
-        /* queda en un punto medio */
-    }
-}
-@keyframes linearebotina {
-    0% {
-        transform: translateX(-50%) scaleX(0);
-    }
-
-    50% {
-        transform: translateX(-50%) scaleX(1.1);
-    }
-
-    70% {
-        transform: translateX(-50%) scaleX(0.9);
-    }
-
-    100% {
-        transform: translateX(-50%) scaleX(1);
-    }
+@font-face {
+    font-family: 'Helvatica';
+    src: url('../fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

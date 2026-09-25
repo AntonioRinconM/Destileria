@@ -1,0 +1,274 @@
+
+.promoHero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 6rem);
+    min-height: 60vh;
+    background: linear-gradient(135deg, rgba(140, 99, 62, 0.35), rgba(88, 69, 54, 0.8));
+}
+
+.textoHero {
+    flex: 1;
+    max-width: 42rem;
+    color: rgb(255, 226, 162);
+}
+
+.etiqueta {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-family: 'TitanOne';
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.textoHero h2 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.descripcion {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    font-family: 'TitanOne';
+    color: rgba(255, 226, 162, 0.9);
+    max-width: 35rem;
+}
+
+.carrusel {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 540px);
+    min-height: 420px;
+    margin: 0 auto;
+}
+
+.pistaCarrusel {
+    position: relative;
+    width: min(100%, 480px);
+    height: 490px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+    border: 3px solid rgba(255, 226, 162, 0.8);
+}
+
+.slideCarrusel {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.slideCarrusel.activo {
+    opacity: 1;
+}
+
+.botonCarrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 226, 162, 0.95);
+    color: rgb(88, 69, 54);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    display: grid;
+    place-items: center;
+    line-height: 1;
+}
+
+.botonCarrusel.anterior {
+    left: 0.15rem;
+}
+
+.botonCarrusel.siguiente {
+    right: 0.15rem;
+}
+
+.panelEvento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 6rem);
+    background: rgba(44, 29, 18, 0.75);
+    border-top: 3px solid rgba(255, 226, 162, 0.6);
+}
+
+.ladoIzquierdo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-width: 0;
+}
+
+
+.cajaTemporizador {
+    flex: 1;
+    min-width: 260px;
+    padding: 1.2rem 1rem;
+    border: 2px solid rgba(255, 226, 162, 0.6);
+    border-radius: 18px;
+    background: rgba(255, 226, 162, 0.08);
+    color: rgb(255, 226, 162);
+    text-align: center;
+}
+
+.etiquetaTemporizador {
+    font-family: 'TitanOne';
+    margin-bottom: 0.8rem;
+    font-size: 1.9rem;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.temporizador {
+    font-family: 'Helvatica';
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 0.75rem;
+}
+
+.bloqueTiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0.5rem;
+    background: rgba(88, 69, 54, 0.8);
+    border-radius: 12px;
+}
+
+.valor {
+    font-size: clamp(1.4rem, 2vw, 2.3rem);
+    font-weight: 700;
+    color: rgb(255, 226, 162);
+}
+
+.textoTiempo {
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.textoEvento {
+    flex: 1.2;
+    color: rgb(255, 226, 162);
+    text-align: right;
+    min-width: 0;
+}
+
+.textoEvento h3 {
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
+    line-height: 1;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+
+.textoEvento p:last-child {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-family: 'TitanOne';
+    line-height: 1.7;
+    color: rgba(255, 226, 162, 0.88);
+}
+@media (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header>h1,
+    header>nav {
+        flex-basis: 100%;
+    }
+
+    header>nav {
+        align-items: center;
+    }
+
+    .promoHero,
+    .panelEvento {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .textoHero,
+    .textoEvento {
+        text-align: center;
+        max-width: none;
+    }
+
+    .ladoIzquierdo {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .textoEvento h3 {
+        letter-spacing: 0.08em;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        padding: 1rem 1rem 1.2rem;
+    }
+
+    header>nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .promoHero,
+    .panelEvento {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .etiqueta,
+    .descripcion,
+    .textoEvento p:last-child,
+    .etiquetaTemporizador {
+        font-size: 1rem;
+    }
+
+    .carrusel {
+        min-height: 320px;
+    }
+
+    .pistaCarrusel {
+        height: 320px;
+    }
+
+    .temporizador {
+        grid-template-columns: repeat(2, minmax(70px, 1fr));
+    }
+
+    .cajaTemporizador {
+        min-width: 0;
+    }
+}

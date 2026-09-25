@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Images/General/icono.png">
         <title>Destileria QUEQUE</title>
         <link rel="stylesheet" href="css/fuentes.css">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
@@ -32,55 +34,63 @@
                 <button class="botonCarrusel anterior" type="button" aria-label="Anterior">&#10094;</button>
 
                 <div class="pistaCarrusel">
-                    <img class="slideCarrusel activo" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 1">
-                    <img class="slideCarrusel" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 2">
-                    <img class="slideCarrusel" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 3">
+                    <img class="slideCarrusel activo"
+                        src="Images/index/botellaQueque.jpg"
+                        alt="Botella de licor Queque">
+                    <img class="slideCarrusel"
+                        src="Images/index/botellaQuequeCitric.jpg"
+                        alt="Botella de licor Queque citrico">
                 </div>
 
                 <button class="botonCarrusel siguiente" type="button" aria-label="Siguiente">&#10095;</button>
             </div>
         </main>
 
-        <section class="panelEvento">
-            <div class="ladoIzquierdo">
-                <div class="imagenEvento">
-                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor con ambiente elegante">
-                </div>
-
-                <div class="cajaTemporizador">
-                    <p class="etiquetaTemporizador">Finaliza el 3-10</p>
-                    <div class="temporizador" data-target="2026-10-03T23:59:59">
-                        <div class="bloqueTiempo">
-                            <span class="valor" data-unit="days">00</span>
-                            <span class="textoTiempo">Días</span>
-                        </div>
-                        <div class="bloqueTiempo">
-                            <span class="valor" data-unit="hours">00</span>
-                            <span class="textoTiempo">Hrs</span>
-                        </div>
-                        <div class="bloqueTiempo">
-                            <span class="valor" data-unit="minutes">00</span>
-                            <span class="textoTiempo">Min</span>
-                        </div>
-                        <div class="bloqueTiempo">
-                            <span class="valor" data-unit="seconds">00</span>
-                            <span class="textoTiempo">Seg</span>
+            <section class="panelEvento">
+                <div class="ladoIzquierdo">
+                    <div class="cajaTemporizador">
+                        <p class="etiquetaTemporizador">Finaliza el 3-10</p>
+                        <div class="temporizador" data-target="2026-10-03T23:59:59">
+                            <div class="bloqueTiempo">
+                                <span class="valor" data-unit="days">00</span>
+                                <span class="textoTiempo">Días</span>
+                            </div>
+                            <div class="bloqueTiempo">
+                                <span class="valor" data-unit="hours">00</span>
+                                <span class="textoTiempo">Hrs</span>
+                            </div>
+                            <div class="bloqueTiempo">
+                                <span class="valor" data-unit="minutes">00</span>
+                                <span class="textoTiempo">Min</span>
+                            </div>
+                            <div class="bloqueTiempo">
+                                <span class="valor" data-unit="seconds">00</span>
+                                <span class="textoTiempo">Seg</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="textoEvento">
-                <p class="etiqueta">Próxima apertura</p>
-                <h3>Ya casi llegamos, no te pierdas la apertura!</h3>
-                <p>
-                    Descubre la nueva colección, los sabores más exclusivos y una experiencia
-                    pensada para quienes celebran cada detalle.
-                </p>
-            </div>
-        </section>
+                <div class="textoEvento">
+                    <p class="etiqueta">Próxima apertura</p>
+                    <h3>Ya casi llegamos, no te pierdas la apertura!</h3>
+                    <p>
+                        Descubre la nueva colección, los sabores más exclusivos y una experiencia
+                        pensada para quienes celebran cada detalle.
+                    </p>
+                </div>
+            </section>
 
-        <script src="js/carrusel.js"></script>
-        <script src="js/temporizador.js"></script>
-    </body>
-</html>
+            <footer>
+                <p>© 2026 Destilería Queque. Todos los derechos reservados.</p>
+                <nav>
+                    <a href="https://www.instagram.com/destileriakalmar/" target="_blank" rel="noreferrer">Instagram</a>
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+                    <a href="https://wa.me/+5492235401044" target="_blank" rel="noreferrer">WhatsApp</a>
+                </nav>
+            </footer>
+
+            <script src="js/carrusel.js"></script>
+            <script src="js/temporizador.js"></script>
+        </body>
+    </html>
