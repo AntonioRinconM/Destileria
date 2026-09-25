@@ -92,11 +92,13 @@ footer nav {
 footer a {
     color: rgb(255, 226, 162);
     text-decoration: none;
-    transition: opacity 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.2rem;
 }
 
 footer a:hover {
-    opacity: 0.8;
+    color: rgb(224, 171, 56);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {

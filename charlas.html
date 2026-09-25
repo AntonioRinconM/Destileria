@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Images/General/icono.png">
+        <title>Charlas informativas | Destilería Queque</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/charlas.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="tituloPrincipal">Destilería QUEQUE</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="charlas.html">Charlas informativas</a>
+                <a href="combos.html">Combos</a>
+                <a href="nosotros.html">Quiénes somos</a>
+                <a href="#footer">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="charlasPage">
+            <section class="heroCharlas">
+                <div class="charlasIntro">
+                    <p class="etiqueta">Encuentros exclusivos</p>
+                    <h2>Charlas informativas</h2>
+                    <p>
+                        En Destilería Queque creemos que cada copa se disfruta mejor cuando se entiende su historia,
+                        su proceso y el arte de combinar sabores. Por eso diseñamos encuentros pensados para
+                        compartir conocimiento, degustación y buena conversación.
+                    </p>
+                </div>
+
+                <aside class="charlasHighlight">
+                    <div class="fichaResumen">
+                        <span class="numero">4</span>
+                        <span class="descripcion">Charlas por mes</span>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="listaCharlas" aria-label="Temas de charlas informativas">
+                <article class="charlaItem">
+                    <span class="badge">Historia</span>
+                    <h3>Origen y tradición</h3>
+                    <p>
+                        Una charla que recorre la historia del licor, su evolución y las técnicas que hacen
+                        que cada botella tenga identidad propia.
+                    </p>
+                    <ul>
+                        <li>Cómo se elige la base del producto.</li>
+                        <li>La influencia de los aromas y la madera.</li>
+                        <li>Historia de la destilería y sus raíces.</li>
+                    </ul>
+                </article>
+
+                <article class="charlaItem">
+                    <span class="badge">Degustación</span>
+                    <h3>Tasting guiado</h3>
+                    <p>
+                        Aprenderás a reconocer matices, notas y texturas para disfrutar más profundamente cada
+                        sorbo y cada maridaje.
+                    </p>
+                    <ul>
+                        <li>Cómo identificar aromas y sabores.</li>
+                        <li>Temperatura ideal para servir.</li>
+                        <li>Consejos para una degustación elegante.</li>
+                    </ul>
+                </article>
+
+                <article class="charlaItem">
+                    <span class="badge">Maridaje</span>
+                    <h3>Sabores para compartir</h3>
+                    <p>
+                        Exploramos combinaciones con snacks, postres y platos para convertir cada encuentro en una
+                        experiencia más memorable.
+                    </p>
+                    <ul>
+                        <li>Maridajes con queso y frutos secos.</li>
+                        <li>Contrastes dulces y cítricos.</li>
+                        <li>Ideas para reuniones con amigos.</li>
+                    </ul>
+                </article>
+
+                <article class="charlaItem">
+                    <span class="badge">Cultura</span>
+                    <h3>Licor y ambiente</h3>
+                    <p>
+                        Una mirada a la experiencia social del licor: cómo crear espacios de encuentro, estilo y
+                        buen gusto para cada ocasión especial.
+                    </p>
+                    <ul>
+                        <li>Ambientación ideal para eventos.</li>
+                        <li>Presentación y servicio premium.</li>
+                        <li>Cómo elegir la mejor experiencia según el momento.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="calendarioBloque" aria-labelledby="calendario-title">
+                <div class="tituloCalendario">
+                    <p class="etiqueta">Próximas fechas</p>
+                    <h3 id="calendario-title">Reservá tu lugar</h3>
+                </div>
+
+                <div class="calendarHeader">
+                    <button id="prevMonth" class="monthControl" type="button" aria-label="Mes anterior">&#10094;</button>
+                    <h4 id="monthLabel">Septiembre 2026</h4>
+                    <button id="nextMonth" class="monthControl" type="button" aria-label="Mes siguiente">&#10095;</button>
+                </div>
+
+                <div class="calendarLegend">
+                    <span class="legendItem"><span class="legendDot"></span> Fecha con charla</span>
+                </div>
+
+                <div id="calendar" class="calendarGrid" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>© 2026 Destilería Queque. Todos los derechos reservados.</p>
+            <nav>
+                <a href="https://www.instagram.com/destileriakalmar/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+                <a href="https://wa.me/+5492235401044" target="_blank" rel="noreferrer">WhatsApp</a>
+            </nav>
+        </footer>
+
+        <script src="js/charlas.js" defer></script>
+    </body>
+</html>

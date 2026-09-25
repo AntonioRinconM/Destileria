@@ -1,3 +1,6 @@
+/* =========================
+!    FUENTES
+========================= */
 @font-face {
     font-family: 'Danfo';
     src: url('../fonts/Danfo-Regular-VariableFont_ELSH.ttf') format('truetype');
@@ -23,4 +26,15 @@
     src: url('../fonts/Helvetica.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+/* ============
+!   SCROLBARR
+============== */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: rgb(83, 57, 37);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(245, 204, 118);
+    border-radius: 0.5rem;
 }
