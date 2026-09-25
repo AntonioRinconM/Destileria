@@ -36,7 +36,7 @@ header>h1 {
     flex: 1 1 68%;
     min-width: 0;
     max-width: 100%;
-    font-size: clamp(2.6rem, 6vw, 8rem);
+    font-size: clamp(2.6rem, 5vw, 8rem);
     letter-spacing: 0.2rem;
     line-height: 0.9;
     white-space: normal;
@@ -61,7 +61,7 @@ header>nav a {
 
 header>nav a:hover {
     color: rgb(224, 171, 56);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 footer {
