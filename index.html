@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destileria QUEQUE</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
-    <header>
-        <h1>Destileria <span>QUEQUES</span></h1>
-        <nav>
-            <a href="#">Quiénes somos</a>
-            <a href="#">Combos</a>
-            <a href="#">Recorrido guiado</a>
-        </nav>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Destileria QUEQUE</title>
+        <link rel="stylesheet" href="css/fuentes.css">
+        <link rel="stylesheet" href="css/layout.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo-principal">Destilería QUEQUE</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Productos</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="hero-promocion">
+            <section class="hero-texto">
+                <p class="eyebrow">Edición especial</p>
+                <h2>Nuevos licores<br>edición limitada</h2>
+                <p class="descripcion">
+                    Un destino intenso y exclusivo, elaborado para quienes buscan una experiencia
+                    memorable y distinta.
+                </p>
+            </section>
+
+            <div class="carousel" aria-label="Carrusel de productos">
+                <button class="carousel-btn prev" type="button" aria-label="Anterior">&#10094;</button>
+
+                <div class="carousel-track">
+                    <img class="carousel-slide active" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 1">
+                    <img class="carousel-slide" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 2">
+                    <img class="carousel-slide" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 3">
+                </div>
+
+                <button class="carousel-btn next" type="button" aria-label="Siguiente">&#10095;</button>
+            </div>
+        </main>
+
+        <section class="evento-panel">
+            <div class="evento-izquierda">
+                <div class="evento-imagen">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor con ambiente elegante">
+                </div>
+
+                <div class="countdown-box">
+                    <p class="countdown-label">Finaliza el 3-10</p>
+                    <div class="countdown" data-target="2026-10-03T23:59:59">
+                        <div class="time-block">
+                            <span class="value" data-unit="days">00</span>
+                            <span class="label">Días</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="value" data-unit="hours">00</span>
+                            <span class="label">Hrs</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="value" data-unit="minutes">00</span>
+                            <span class="label">Min</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="value" data-unit="seconds">00</span>
+                            <span class="label">Seg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evento-texto">
+                <p class="eyebrow">Próxima apertura</p>
+                <h3>Ya casi llegamos, no te pierdas la apertura!</h3>
+                <p>
+                    Descubre la nueva colección, los sabores más exclusivos y una experiencia
+                    pensada para quienes celebran cada detalle.
+                </p>
+            </div>
+        </section>
+
+        <script src="js/carousel.js"></script>
+        <script src="js/countdown.js"></script>
+    </body>
 </html>
