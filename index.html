@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Destileria QUEQUE</title>
         <link rel="stylesheet" href="css/fuentes.css">
-        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/maquetacion.css">
     </head>
     <body>
         <header>
-            <h1 class="titulo-principal">Destilería QUEQUE</h1>
+            <h1 class="tituloPrincipal">Destilería QUEQUE</h1>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Productos</a>
@@ -18,9 +18,9 @@
             </nav>
         </header>
 
-        <main class="hero-promocion">
-            <section class="hero-texto">
-                <p class="eyebrow">Edición especial</p>
+        <main class="promoHero">
+            <section class="textoHero">
+                <p class="etiqueta">Edición especial</p>
                 <h2>Nuevos licores<br>edición limitada</h2>
                 <p class="descripcion">
                     Un destino intenso y exclusivo, elaborado para quienes buscan una experiencia
@@ -28,50 +28,50 @@
                 </p>
             </section>
 
-            <div class="carousel" aria-label="Carrusel de productos">
-                <button class="carousel-btn prev" type="button" aria-label="Anterior">&#10094;</button>
+            <div class="carrusel" aria-label="Carrusel de productos">
+                <button class="botonCarrusel anterior" type="button" aria-label="Anterior">&#10094;</button>
 
-                <div class="carousel-track">
-                    <img class="carousel-slide active" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 1">
-                    <img class="carousel-slide" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 2">
-                    <img class="carousel-slide" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 3">
+                <div class="pistaCarrusel">
+                    <img class="slideCarrusel activo" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 1">
+                    <img class="slideCarrusel" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 2">
+                    <img class="slideCarrusel" src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=900&q=80" alt="Botella de licor premium 3">
                 </div>
 
-                <button class="carousel-btn next" type="button" aria-label="Siguiente">&#10095;</button>
+                <button class="botonCarrusel siguiente" type="button" aria-label="Siguiente">&#10095;</button>
             </div>
         </main>
 
-        <section class="evento-panel">
-            <div class="evento-izquierda">
-                <div class="evento-imagen">
+        <section class="panelEvento">
+            <div class="ladoIzquierdo">
+                <div class="imagenEvento">
                     <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Botella de licor con ambiente elegante">
                 </div>
 
-                <div class="countdown-box">
-                    <p class="countdown-label">Finaliza el 3-10</p>
-                    <div class="countdown" data-target="2026-10-03T23:59:59">
-                        <div class="time-block">
-                            <span class="value" data-unit="days">00</span>
-                            <span class="label">Días</span>
+                <div class="cajaTemporizador">
+                    <p class="etiquetaTemporizador">Finaliza el 3-10</p>
+                    <div class="temporizador" data-target="2026-10-03T23:59:59">
+                        <div class="bloqueTiempo">
+                            <span class="valor" data-unit="days">00</span>
+                            <span class="textoTiempo">Días</span>
                         </div>
-                        <div class="time-block">
-                            <span class="value" data-unit="hours">00</span>
-                            <span class="label">Hrs</span>
+                        <div class="bloqueTiempo">
+                            <span class="valor" data-unit="hours">00</span>
+                            <span class="textoTiempo">Hrs</span>
                         </div>
-                        <div class="time-block">
-                            <span class="value" data-unit="minutes">00</span>
-                            <span class="label">Min</span>
+                        <div class="bloqueTiempo">
+                            <span class="valor" data-unit="minutes">00</span>
+                            <span class="textoTiempo">Min</span>
                         </div>
-                        <div class="time-block">
-                            <span class="value" data-unit="seconds">00</span>
-                            <span class="label">Seg</span>
+                        <div class="bloqueTiempo">
+                            <span class="valor" data-unit="seconds">00</span>
+                            <span class="textoTiempo">Seg</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="evento-texto">
-                <p class="eyebrow">Próxima apertura</p>
+            <div class="textoEvento">
+                <p class="etiqueta">Próxima apertura</p>
                 <h3>Ya casi llegamos, no te pierdas la apertura!</h3>
                 <p>
                     Descubre la nueva colección, los sabores más exclusivos y una experiencia
@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <script src="js/carousel.js"></script>
-        <script src="js/countdown.js"></script>
+        <script src="js/carrusel.js"></script>
+        <script src="js/temporizador.js"></script>
     </body>
 </html>
